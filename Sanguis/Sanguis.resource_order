@@ -1,5 +1,5 @@
 {
-  "FolderOrderSettings": [
+  "FolderOrderSettings":[
     {"name":"Animation Curves","order":12,"path":"folders/Animation Curves.yy",},
     {"name":"Extensions","order":14,"path":"folders/Extensions.yy",},
     {"name":"Fonts","order":7,"path":"folders/Fonts.yy",},
@@ -16,21 +16,21 @@
     {"name":"Tile Sets","order":2,"path":"folders/Tile Sets.yy",},
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
   ],
-  "ResourceOrderSettings": [
+  "ResourceOrderSettings":[
     {"name":"obj_player_attack","order":1,"path":"objects/obj_player_attack/obj_player_attack.yy",},
-    {"name":"spr_attack4","order":9,"path":"sprites/spr_attack4/spr_attack4.yy",},
-    {"name":"spr_jump","order":3,"path":"sprites/spr_jump/spr_jump.yy",},
-    {"name":"spr_attack2","order":7,"path":"sprites/spr_attack2/spr_attack2.yy",},
-    {"name":"spr_run_left","order":11,"path":"sprites/spr_run_left/spr_run_left.yy",},
-    {"name":"spr_idle","order":6,"path":"sprites/spr_idle/spr_idle.yy",},
-    {"name":"spr_walk","order":1,"path":"sprites/spr_walk/spr_walk.yy",},
     {"name":"obj_wall","order":2,"path":"objects/obj_wall/obj_wall.yy",},
-    {"name":"spr_run","order":2,"path":"sprites/spr_run/spr_run.yy",},
+    {"name":"spr_attack2","order":7,"path":"sprites/spr_attack2/spr_attack2.yy",},
     {"name":"spr_attack3","order":8,"path":"sprites/spr_attack3/spr_attack3.yy",},
-    {"name":"spr_dead","order":5,"path":"sprites/spr_dead/spr_dead.yy",},
+    {"name":"spr_attack4","order":9,"path":"sprites/spr_attack4/spr_attack4.yy",},
     {"name":"spr_black_square","order":12,"path":"sprites/spr_black_square/spr_black_square.yy",},
+    {"name":"spr_dead","order":5,"path":"sprites/spr_dead/spr_dead.yy",},
     {"name":"spr_hurt","order":4,"path":"sprites/spr_hurt/spr_hurt.yy",},
+    {"name":"spr_idle","order":6,"path":"sprites/spr_idle/spr_idle.yy",},
+    {"name":"spr_jump","order":3,"path":"sprites/spr_jump/spr_jump.yy",},
+    {"name":"spr_run_left","order":11,"path":"sprites/spr_run_left/spr_run_left.yy",},
+    {"name":"spr_run","order":2,"path":"sprites/spr_run/spr_run.yy",},
     {"name":"spr_walk_left","order":10,"path":"sprites/spr_walk_left/spr_walk_left.yy",},
+    {"name":"spr_walk","order":1,"path":"sprites/spr_walk/spr_walk.yy",},
     {"name":"Sprite13","order":1,"path":"sprites/Sprite13/Sprite13.yy",},
   ],
 }

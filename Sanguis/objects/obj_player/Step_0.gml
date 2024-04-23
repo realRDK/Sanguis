@@ -53,3 +53,5 @@ if (abs(xspd) > 0) {
 if (xspd == 0) {
 	sprite_index = spr_idle;
 }
+
+mask_index = spr_idle;
