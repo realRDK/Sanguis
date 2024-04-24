@@ -3,10 +3,13 @@
 
 face = 1;
 dir = 0;
-spd = 3;
-sprint_spd = 6;
+runType = 0;
+spd[0] = 3;
+spd[1] = 6;
 xspd = 0;
 yspd = 0;
+state = PlayerState.Free;
+hitByAttack = ds_list_create();
 
 // Jumping
 grav = 0.5
@@ -19,7 +22,12 @@ sprWalk = spr_walk;
 sprRun = spr_run;
 sprJump = spr_jump;
 
-
+// States
+enum PlayerState {
+	Free,
+	Attack,
+	Combo
+}
 
 
 

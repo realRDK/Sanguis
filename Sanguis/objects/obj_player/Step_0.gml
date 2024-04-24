@@ -1,53 +1,21 @@
 //Movement Control
 
-moveRight = keyboard_check(ord("D"));
-moveLeft = keyboard_check(ord("A"));
-jumpPress = keyboard_check_pressed(ord("W"));
+getControls();
 
-dir = moveRight - moveLeft;
-
-if (dir != 0) {
-	face = dir;
+switch (state) {
+	case PlayerState.Free: PlayerStateFree(); break;
+	case PlayerState.Attack: PlayerStateAttack(); break;
+	case PlayerState.Combo: PlayerStateCombo(); break;
 }
-
-xspd = dir * spd;
-
-var subPixel = 0.5;
-if place_meeting(x + xspd, y, obj_wall) {
-	var pixelCheck = subPixel * sign(xspd);
-	while (!place_meeting(x + pixelCheck, y, obj_wall)) {
-		x += pixelCheck;
-	}
-	
-	xspd = 0;
-}
-
-x += xspd;
-
-// Jumping Control
-yspd += grav;
-
-if (jumpPress && place_meeting(x, y + 1, obj_wall)) {
-	yspd = jspd;
-}
-
-var subPixel = 0.5;
-if place_meeting(x, y + yspd, obj_wall) {
-	var pixelCheck = subPixel * sign(yspd);
-	while (!place_meeting(x, y + pixelCheck, obj_wall)) { 
-		y += pixelCheck;
-	}
-	
-	yspd = 0;
-}
-
-
-y += yspd;
 
 // Sprite Control
 
-if (abs(xspd) > 0) {
+if (abs(xspd) > 0 && xspd < 6) {
 	sprite_index = spr_walk;
+}
+
+if (abs(xspd) >= 6) {
+	sprite_index = spr_run;
 }
 
 if (xspd == 0) {

@@ -17,8 +17,11 @@
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
   ],
   "ResourceOrderSettings":[
-    {"name":"obj_player_attack","order":1,"path":"objects/obj_player_attack/obj_player_attack.yy",},
     {"name":"obj_wall","order":2,"path":"objects/obj_wall/obj_wall.yy",},
+    {"name":"PlayerStateAttack","order":2,"path":"scripts/PlayerStateAttack/PlayerStateAttack.yy",},
+    {"name":"PlayerStateCombo","order":3,"path":"scripts/PlayerStateCombo/PlayerStateCombo.yy",},
+    {"name":"PlayerStateFree","order":1,"path":"scripts/PlayerStateFree/PlayerStateFree.yy",},
+    {"name":"spr_attack1HB","order":13,"path":"sprites/spr_attack1HB/spr_attack1HB.yy",},
     {"name":"spr_attack2","order":7,"path":"sprites/spr_attack2/spr_attack2.yy",},
     {"name":"spr_attack3","order":8,"path":"sprites/spr_attack3/spr_attack3.yy",},
     {"name":"spr_attack4","order":9,"path":"sprites/spr_attack4/spr_attack4.yy",},
