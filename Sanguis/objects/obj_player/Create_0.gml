@@ -8,8 +8,6 @@ spd[0] = 3;
 spd[1] = 6;
 xspd = 0;
 yspd = 0;
-state = PlayerState.Free;
-hitByAttack = ds_list_create();
 
 // Jumping
 grav = 0.5
@@ -22,13 +20,20 @@ sprWalk = spr_walk;
 sprRun = spr_run;
 sprJump = spr_jump;
 
+// Attack
+canAttack = true;
+
 // States
-enum PlayerState {
-	Free,
-	Attack,
-	Combo
+states = {
+	idle : new State (spr_idle),
+	walk : new State (spr_walk),
+	run : new State (spr_run),
+	attack : new State (spr_attack1)
 }
 
+states.attack.StateOnEnd(states.idle);
+
+state = states.idle;
 
 
 
