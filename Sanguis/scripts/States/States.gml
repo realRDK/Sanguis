@@ -20,10 +20,20 @@ function state_set (_state) {
 function state_set_attack (_state) {
 	state_set (_state);
 	
-	canAttack = false;
-	alarm[0] = 60;
+	canAttack1 = false;
+	alarm[0] = attackSpeed;
 	var _hitbox = instance_create_depth(x, y, depth, obj_attack1HB);
 	_hitbox.sprite_index = sprite_index;
 	_hitbox.image_xscale = face;
 	obj_sfx.swordSnd = true;
+}
+
+function state_set_dead (_state) {
+	
+	sprite_index = spr_dead;
+	image_index = 3;
+	if (!isDead) {
+		alarm[2] = 45;
+	}
+	isDead = true;
 }

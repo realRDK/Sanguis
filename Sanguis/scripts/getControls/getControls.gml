@@ -6,4 +6,5 @@ function getControls(){
 	jumpPress = keyboard_check_pressed(ord("W"));
 	runKey = keyboard_check(vk_shift);
 	attackKey = keyboard_check_pressed(vk_space);
+	crimsonFuryKey = keyboard_check_pressed(ord("C"));
 }

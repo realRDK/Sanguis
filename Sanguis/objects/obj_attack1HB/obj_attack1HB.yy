@@ -35,5 +35,5 @@
     "path":"sprites/spr_attack1HB/spr_attack1HB.yy",
   },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }
